@@ -1,0 +1,43 @@
+.d-none{
+	display: none !important;
+}
+
+.d-block{
+	display: block !important;
+}
+
+.d-inline-block{
+	display: inline-block !important;
+}
+
+.border-fat{
+	border-color: $border-color;
+	border-width: 4px;
+	margin: 1em;
+	border-style: solid;
+}
+
+.border-thin{
+	border-color: $border-color;
+	border-width: 1px;
+	margin: 1em;
+	border-style: solid;
+}
+
+.cta-wrapper{
+    margin-bottom: 3em;
+    margin-top: 3em;
+	a{
+		font-size: $font-size-small;
+		transition: $transition;
+		span{
+			font-size: 10px;
+		    margin-left: 5px;
+		    display: inline-block;
+		    transition: $transition;
+		}
+		&:hover span{
+			@include translateX(8px);
+		}
+	}
+}

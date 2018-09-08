@@ -1,0 +1,39 @@
+.lizing-module{
+	.header{
+		padding: 10px 20px;
+	}
+	.relative-container{
+		position: relative;
+		    height: auto;
+            background: yellow;
+		.red-box{
+			background-color: $red;
+		    height: 225px;
+		    width: 95%;
+		     // position: absolute;
+		     // right: 0;
+		     @include  translateX(5vw);
+		}
+		.img-container{
+			width: 95%;
+			//position: absolute;
+			@include translateY(-142px);
+			margin-bottom: -122px;
+		}
+
+	}
+	.content{
+		padding: 0 14px;
+		position: relative;
+		.cta-wrapper{
+		    margin-top: 1em;
+		    margin-bottom: 1em;
+		}
+	}
+}
+
+@media (min-width: $tablet-large){
+	.flex-lg{
+		display: flex;
+	}
+}

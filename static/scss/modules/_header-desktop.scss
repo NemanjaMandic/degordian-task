@@ -1,0 +1,70 @@
+.desktop-header{
+	display: none;
+}
+
+@media (min-width: $tablet-large){
+	.desktop-header{
+		display: block;
+		.top-nav{
+		    display: flex;
+		    justify-content: space-between;
+		    padding: 23px;
+		    .language-selector{
+		    	li{
+		    		&:first-child{
+		    			border-right: 1px solid;
+		    			padding-right: 12px;
+		    		}
+		    		a{
+		    			&.active{
+		    				color: $red;
+		    			}
+		    		}
+		    	}
+		    }
+			ul{
+				display: inline-flex;
+				li{
+					margin-right: 12px;
+					a{
+						color: $text-color;
+						font-family: $helveticaRegular;
+						font-size: 12px;
+						span{
+							 margin-right: 5px;
+						}
+						.icon-key{
+							display: inline-block;
+						    @include rotate(43);
+						   
+						}
+					}
+				}
+			}
+		}
+		.main-nav{
+		    position: absolute;
+		    top: 47px;
+		    left: 83px;
+		    z-index: 1;
+			.logo{
+				width: 15%;
+			}
+			.menu-container{
+				ul{
+				    display: flex;
+				    justify-content: center;
+				    li{
+				    	a{
+				    		color: $white;
+				    		transition: $transition;
+				    		&:hover{
+				    			color: $red;
+				    		}
+				    	}
+				    }
+				}
+			}
+		}
+	}
+}

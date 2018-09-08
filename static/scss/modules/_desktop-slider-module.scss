@@ -1,0 +1,42 @@
+.desktop-slider-module{
+	display: none;
+}
+@media (min-width: $tablet-large){
+	.desktop-slider-module{
+		display: block;
+		position: relative;
+		.glide-desktop-header{
+			position: relative;
+			.glide__bullets{
+				background: black;
+			}
+			.glide__arrows{
+				.glide__arrow{
+					border: 0;
+				    box-shadow: none;
+				    text-shadow: none;
+				    transition: $transition;
+				    font-size: 35px;
+				    &:hover{
+				    	color: $red;
+				    }
+				    &.glide__arrow--left{
+				    	left: 1em;
+				    	span{
+				    		display: inline-block;
+				    		@include rotate(180);
+				    	}
+				    }
+				    &.glide__arrow--right{
+				    	right: 1em;
+				    }
+				}
+			}
+			.glide__slide{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,82 @@
+.about-module{
+	background: $white;
+	text-align: center;
+	.heading{
+		.title{
+			color: $title-color;
+		}
+		.text{
+			
+			line-height: 1.4;
+		    width: 80%;
+		    margin: 0 auto;
+		}
+	}
+	.content{
+		padding: 7px 5px;
+		margin-bottom: 3.5em;
+		
+		.number{
+			color: $red;
+			font-size: 76px;
+            font-family: $helveticaLight;
+		    margin: 25px 0;
+		}
+		.number-title{
+			font-family: $helveticaBold;
+			text-transform: uppercase;
+			
+		}
+		.text{
+			
+		    width: 80%;
+		    margin: 0 auto;
+		}
+	}
+	.about-glide{
+		position: relative;
+		.glide__bullets{
+		     bottom: 1em;
+		     
+			.glide__bullet{
+				background-color: #d7d7d7;
+				width: 10px;
+				height: 10px;
+				box-shadow: none;
+				margin: 0 10px;
+				&:hover,
+				&:focus{
+					border: 0;
+					background-color: $red;
+				}
+				&.glide__bullet--active{
+					background-color: $red;
+				}
+			}
+		}
+	}
+
+	hr{
+		margin: 2em 1em;
+	}
+
+	
+}
+
+@media (min-width: $tablet-large){
+	.about-glide{
+		.glide__bullet{
+			display: none;
+		}
+		.glide__slide{
+			
+			user-select: auto;
+			&:hover{
+				cursor: text;
+			}
+		}
+	}
+}
+
+
+

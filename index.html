@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Societe General</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="./static/img/favicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./static/dist/css/style.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+<header>
+	<!-- display on small screens -->
+	<section class="mobile-header">
+		<div class="top-nav">
+			<ul class="list-container">
+				<li><a href="#">SOGE LIZING</a></li>
+				<li><a href="#">KONTAKT</a></li>
+			</ul>
+		</div>
+		<nav class="main-nav-sm" id="mainNavSm">
+			<div class="social-container">
+				<div>
+					<ul class="social-icons">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+				<div class="close">
+					<a href="#" id="closeSmallMenu">Close <span class="icon-close"></span></a>
+				</div>
+			</div>
+			<div class="menu-container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About the insurance</a></li>
+					<li><a href="#">Client service</a></li>
+					<li><a href="#">Diagnostic tool</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="menu-footer">
+				<ul>
+					<li><a href="#"><span class="icon-pin"></span> Lokacije</a></li>
+				</ul>
+				<ul class="language-selector">
+					<li><a href="#">ENG</a></li>
+					<li><a href="#" class="active">SRB</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+
+	<!-- display on large screens -->
+	<section class="desktop-header">
+		<div class="top-nav">
+			<ul class="list-container">
+				<li><a href="#">SOGE LIZING</a></li>
+				<li><a href="#">KONTAKT</a></li>
+			</ul>
+			<ul class="list-container">
+				<li><a href="#"><span class="icon-pin"></span> LOKACIJE</a></li>
+				<li><a href="#"><span class="icon-val"></span> KURSNA LISTA</a></li>
+			</ul>
+			<ul class="list-container">
+				<li><a href="#"><span class="icon-key"></span> PREDMETI LIZINGA U PONUDI</a></li>
+				
+			</ul>
+			<ul class="language-selector">
+					<li><a href="#">ENG</a></li>
+					<li><a href="#" class="active">SRB</a></li>
+			</ul>
+		</div>
+		<nav class="main-nav" id="mainNav">
+			<div class="logo">
+				<a href="#">
+					<img src="./static/img/logo_b.svg" alt="Logo" />
+				</a>
+			</div>
+			<div class="menu-container">
+				<ul>
+					<li><a href="#">Fizička lica</a></li>
+					<li><a href="#">Pravna lica </a></li>
+					<li><a href="#">Preduzetnici</a></li>
+					<li><a href="#">Poljoprivrednici </a></li>
+					<li><a href="#">Podrška</a></li>
+					
+				</ul>
+			</div>
+			
+		</nav>
+	</section>
+</header>
+<section class="desktop-slider-module">
+	<div class="glide-desktop-header">
+	  <div class="glide__track" data-glide-el="track">
+	    <ul class="glide__slides">
+	      <li class="glide__slide">
+		      <img src="./static/img/slide-1.jpg" alt="Slide 1" />
+		      <div class="content-wrapper">
+		      	<span>SOGE LIZING AKCIJA</span>
+		      	<h3>Dacia finansiranje</h3>
+		      	<p>Novi uslovi rinansiranja važe za nova DACIA PUTNIČKA i DOSTAVNA vozila do 01.04.2016. Proverite zašto smo najbolji</p>
+		        <a href="#">Pogledaj akciju</a>
+		      </div>
+		  </li>
+	      <li class="glide__slide">
+	      	1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	      </li>
+	      <li class="glide__slide">
+	      	2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	      </li>
+	    </ul>
+	  </div>
+	  <!-- bullets -->
+	  <div class="glide__bullets" data-glide-el="controls[nav]">
+	    <button class="glide__bullet" data-glide-dir="=0"></button>
+	    <button class="glide__bullet" data-glide-dir="=1"></button>
+	    <button class="glide__bullet" data-glide-dir="=2"></button>
+	  </div>
+	  <!-- arrows -->
+	  <div class="glide__arrows" data-glide-el="controls">
+	    <a class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="icon-arrow_t rotate"></span></a>
+	    <a class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="icon-arrow_t"></span></a>
+	  </div>
+	</div>
+</section>
+<section class="about-module">
+<div class="heading">
+	<h3 class="title">Snaga Sogelease Srbije</h3>
+    <p class="text">Nakon više od 10 godina rada i iskustva u sferi lizinga, zadovoljstvo nam je da budemo deo vaših uspeha, kako na poslovnom, tako i na privatnom planu. U Srbiji primenjujemo iskustva i znanja stečena radom širom sveta, a o našim uspesima govore i sledeći podaci:</p>
+</div>
+<div class="about-glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+      	<div class="content">
+			<p class="number">7345</p>
+			<p class="number-title">broj ugovora</p>
+			<p class="text">Što predstavlja 15% od ukupnog broja 
+		ugovora lizinga u Srbiji </p>
+      	</div>
+      </li>
+      <li class="glide__slide">
+      	<div class="content">
+			<p class="number">22 M&euro;</p>
+			<p class="number-title">Neto vrednost predmeta</p>
+			<p class="text">Što predstavlja 15% od ukupnog broja 
+		ugovora lizinga u Srbiji </p>
+      	</div>
+      </li>
+      <li class="glide__slide">
+      	<div class="content">
+			<p class="number">3500</p>
+			<p class="number-title">Broj aktivnih ugovora</p>
+			<p class="text">Što predstavlja 143 eur bilasna aktiva ??? </p>
+      	</div>
+      </li>
+    </ul>
+  </div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+</div>
+</div>
+	
+	<hr class="border-fat">
+
+    <div class="cta-wrapper">
+		<a href="#">Saznajte vise o detaljima naseg poslovanja <span class="icon-arrow"></span></a>
+	</div>
+
+</section>
+
+<section class="info-module">
+	<div class="header-image" id="logo">
+		<img src="./static/img/car-keys-sm.png"
+			 srcset="./static/img/car-keys-sm.png 320w,
+					 ./static/img/car-keys-lg.png 768w" 
+					  alt="Zavrsite sve" />
+	</div>
+	<div class="info-content">
+		<h3>Zavrsite sve na jednom mestu</h3>
+		<p>Pored toga što ćemo se potruditi da vaš lizing bude uspešno odobren, kod nas možete završiti i ostale stvari koje su vam neophodne.</p>
+			
+	</div>
+	<div class="box-container">
+		
+		<div class="box">
+			<div class="icon-container">
+				<span class="icon-lizing"></span>
+			</div>
+			<h3>Lizing</h3>
+			<p>Zaboravite na dugačak i zamoran proces obrade zahteva. Kod nas ćete odgovor dobiti u roku od 48 sati, a naši agenti su vam u svakom trenutku na raspolaganju za pomoć i odgovore na eventualna pitanja.</p>
+			
+		</div>
+		<div class="box">
+			<div class="icon-container">
+				<span class="icon-osiguranje"></span>
+			</div>
+			<h3>Osiguranje</h3>
+			<p>Svaki proizvod uzet na lizing mora biti kasko osiguran tokom celog trajanja ugovora. U saradnji sa osiguravajućim kućama, kod nas ćete moći da uzmete adekvatnu polisu koja odgovara odabranom proizvodu.</p>
+			
+		</div>
+		<div class="box">
+			<div class="icon-container">
+				<span class="icon-reg"></span>
+			</div>
+			<h3>Registracija</h3>
+			<p>U saradnji sa posrednicima za registraciju vozila, u mogućnosti smo da vam ponudimo povoljnu i brzu uslugu registracije, što znači da ceo proces oko svog novog vozila možete završiti na istom mestu - kod nas.</p>
+			
+		</div>
+	</div>
+
+	<hr class="border-fat">
+
+	<div class="cta-wrapper">
+		<a href="#">Saznajte više o našoj podršci <span class="icon-arrow"></span></a>
+	</div>
+
+</section>
+
+
+
+<section class="lizing-module">
+	<div class="flex-lg">
+	<div class="header">
+		<h3>Finansijski lizing.</h3>
+		<p>Saznajte sve pojedinosti i odaberite najbolje rešenje za svoje potrebe.</p>
+	</div>
+	<div class="relative-container">
+		<div class="red-box">
+			
+		</div>
+		<div class="img-container">
+			<img src="./static/img/happy-people-sm.png" alt="Finansijski lizing" />
+		</div>
+
+		
+	</div>
+	</div>
+	<div class="content">
+			<p>
+				Finansijski lizing predstavlja moderan vid finansiranja čija se osnovna ideja bazira na činjenici da tokom trajanja ugovora klijent koristi predmet lizinga, da ga otplaćuje u ratama, a isplatom poslednje rate postaje i njegov vlasnik.
+			</p>
+			<div class="cta-wrapper">
+				<a href="#">Saznajte vise o detaljima naseg poslovanja <span class="icon-arrow"></span></a>
+			</div>
+		</div>
+</section>
+
+<section class="blog-module">
+	
+	<hr class="border-thin">
+
+	<h2>Magazin Finovacije</h2>
+
+	<div class="blog-container">
+	<article class="blog-post">
+		
+		<p>Investiciono bankarstvo</p>
+		<div class="img-container">
+			<img src="./static/img/over-sm.png" alt="Kreativna blokada" />
+		</div>
+		
+		<h3>Šta kada niste sigurni šta želite i kada imate kreativnu blokadu</h3>
+		<div class="large-content">
+			<p>
+				Societe Generale Osiguranje je osiguravajuće društvo specijalizovano za životna osiguranja. U Srbiji primenjujemo iskustva i znanja iz poslovanja SOGECAP na svetskom tržištu.
+			</p>
+
+			<div class="cta-wrapper">
+				<a href="#">Saznaj više <span class="icon-arrow"></span></a>
+			</div>
+
+		</div>
+
+	</article>
+	<article class="blog-post">
+		
+		<p>Faktoring</p>
+		<div class="img-container">
+			<img src="./static/img/blog1-sm.png" alt="Kreativna Blokada" />
+		</div>
+		
+		<h3>Moguća i štednja uz trošenje u societe generale banci</h3>
+
+		<div class="large-content">
+			<p>
+				Nova jedinstva opcija u Societe Generale e-banking platformi omogućava korisnicima da brzo i lako realizuju kompletan proces odobrenja kredita online. U nekoliko koraka u okviru e-banking platforme, dođite do željene sume novca! 
+			</p>
+
+			<div class="cta-wrapper">
+				<a href="#">Saznaj više <span class="icon-arrow"></span></a>
+			</div>
+
+		</div>
+	</article>
+	<article class="blog-post">
+		
+		<p>ONLINE KREDIT</p>
+		<div class="img-container">
+			<img src="./static/img/working-desk-sm.png" alt="Stednja u banci" />
+		</div>
+		
+		<h3>Zašto je strpljenje jedna od ključnih karakteristika dobrog menadžera</h3>
+		<div class="large-content">
+			<p>
+				Nova jedinstva opcija u Societe Generale e-banking platformi omogućava korisnicima da brzo i lako realizuju kompletan proces odobrenja kredita online. U nekoliko koraka u okviru e-banking platforme, dođite do željene sume novca!
+			</p>
+
+			<div class="cta-wrapper">
+				<a href="#">Saznaj više <span class="icon-arrow"></span></a>
+			</div>
+
+		</div>
+	</article>
+	</div>
+	
+</section>
+
+<section class="newsletter-module">
+	<h3>Budite informisani</h3>
+	<p>Ne propustite savete i dobre priče koje hiljade naših klijenata redovno dobija u svoje </p>
+
+	<div class="input-container">
+	   
+	    <input class="input-field" type="text" placeholder="Tvoja email adresa" name="usrnm">
+	     <a href="#">
+	     	<i class="far fa-paper-plane"></i>
+	     	<p>Prijavi se</p>
+	     </a>
+	</div>
+</section>
+<section class="contact-module">
+	<h3>Niste našli u ponudi šta vas zanima?</h3>
+	<p>Pemiju tokom ugovorenog perioda, a u slučaju nastupanja osiguranog događaja, suma se isplaćuje kxqorisnicima polise. Osiguranje života je važna </p>
+
+	<a class="contact-link" id="openContact" href="#">Kontaktirajte nas</a>
+
+	<div class="form-container" id="contactContent">
+		<form action="#">
+		  
+		  <div class="input-container">
+	        <p>Unesite email</p>
+		    <input class="input-field" type="text" placeholder="" name="email">
+		  </div>
+
+		  <div class="input-container">
+		  	<p>Savet, kritika, predlog, pitanje</p>
+		    <textarea rows="10">
+		    	Sazet tekst o proizvodu koji je kao tizer teskt..Želite da štedite, investirate u sebe i budućnost svoje porodice? Societe Generale banka vam omogućava korišćenje bezgotovinskog plaćanja i usluge elektronskog bankarstva. U nama ćete naći pravog partnera!
+		    </textarea>
+		  </div>
+		  
+		  <div class="input-container">
+		   <label class="container">
+			  <input type="checkbox" checked="checked">
+			  <span class="checkmark"></span>OneOne
+			</label>
+		  </div>
+
+		  <div class="input-container">
+		   <a class="contact-link" href="#">Postavi pitanje</a>
+		  </div>
+		</form>
+        <div class="input-container close">
+		   <a href="#" id="closeContact">Zatvori <span class="icon-close"></span></a>
+		 </div>
+	</div>
+</section>
+<footer>
+   
+   <hr class="border-fat">
+
+	<nav class="footer-nav-sm">
+		<ul class="list-wrapper">
+			<li><a href="#" class="toggle-nav" id="toggleTopNav">NEKA KATEGORIJA <span class="icon-arrow_t"></span></a>
+				<ul class="show-list" id="firstNav">
+					<li><a href="#">Fizicka lica</a></li>
+					<li><a href="#">Pravna lica</a></li>
+					<li><a href="#">Preduzetnici</a></li>
+					<li><a href="#">Poljoprivrednici</a></li>
+				</ul>
+			</li><!-- neka kategorija -->
+			<li><a href="#" class="toggle-nav" id="toggleBottomNav">SOGE LIZING <span class="icon-arrow_t"></span></a>
+				<ul class="show-list" id="secondNav">
+					<li><a href="#">Nesto 1</a></li>
+					<li><a href="#">Nesto 2</a></li>
+					<li><a href="#">Nesto 3</a></li>
+				</ul>
+			</li><!-- soge lizing -->
+			<li><a href="#" class="toggle-nav">PODRSKA <span class="icon-arrow_t"></span></a>
+
+			</li><!-- podrska -->
+			<li>
+				<a href="#" class="toggle-nav">KONTAKT <span class="icon-arrow_t"></span></a>
+			</li><!-- kontakt -->
+		</ul>
+
+		<div class="cta-wrapper">
+			<a href="#">www.societegenerale.rs <span class="icon-arrow"></span></a>
+		</div>
+
+	</nav>
+	<div class="info-sm">
+		<ul>
+			<li><a href="#">USLOVI KORISCENJA</a></li>
+			<li><a href="#">SOCIETE GENERALE GROUP</a></li>
+			<li><a href="#">&copy; SOGELASE 2018</a></li>
+		</ul>
+	</div>
+
+	<!-- Display on large screen -->
+	<nav class="footer-nav-lg">
+
+		<ul class="list-wrapper">
+			<li class="title"><a href="#">PRODUCTS</a></li>
+			<li><a href="#">Credit life housing loans</a></li>
+			<li><a href="#">Credit life consumer loans</a></li>
+			<li><a href="#">Term life</a></li>
+			<li><a href="#">Endowment</a></li>
+		</ul>
+
+		<ul class="list-wrapper">
+			<li class="title"><a href="#">SOGE INSURANCE</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Distribution</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+
+		<ul class="list-wrapper">
+			<li class="title"><a href="#">CLIENT SERVICE</a></li>
+			<li><a href="#">Claims reporting</a></li>
+			<li><a href="#">Complaints</a></li>
+		</ul>
+
+		<ul class="list-wrapper">
+			<li class="title"><a href="#">LEARN</a></li>
+			<li><a href="#">FAQ</a></li>
+			
+		</ul>
+
+		<ul class="list-wrapper">
+			<li class="title"><a href="#">CONTACT</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Locations</a></li>
+			<li class="socials">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<div class="info-lg">
+		<p>BANKA SOCIETE GENERALE SRBIJA</p>
+		<div class="cta-wrapper">
+				<a href="#">www.societegenerale.rs <span class="icon-arrow"></span></a>
+		</div>
+	</div>
+    
+    <div class="bottom-info-lg">
+    	<ul>
+    		<li><a href="#">PRIVACY & TERMS </a></li>
+			<li><a href="#">FINANCIAL STATEMENT</a></li>
+    	</ul>
+    	<ul>
+    		<li><a href="#">SOCIÉTÉ GÉNÉRALE GROUP</a></li>
+			<li><a href="#">&copy; SGBS 2017</a></li>
+    	</ul>
+    </div>
+
+
+</footer>
+
+
+
+
+
+<!-- scripts -->
+<script src="./static/dist/js/vendors.min.js"></script>
+<script src="./static/dist/js/custom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> <!--change it later -->
+
+<script>
+  
+</script>
+</body>
+</html>

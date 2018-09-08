@@ -1,0 +1,22 @@
+body{
+	font-family: $helveticaRegular;
+	color: $text-color;
+	width: 100%;
+    display: block;
+}
+a{
+	text-decoration: none;
+	color: $red;
+}
+h3{
+	font-family: $helveticaRegular;
+	font-size: $title-size;
+	color: $title-color;
+}
+p{
+	font-size: $font-size-small;
+	line-height: 1.4;
+}
+textarea:focus, input:focus{
+    outline: none;
+}

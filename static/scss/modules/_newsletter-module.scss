@@ -1,0 +1,31 @@
+.newsletter-module {
+	border-top:  1px solid #e6e6e6;
+	border-bottom:  1px solid #e6e6e6;
+	background-color:  #f2f2f2;
+	padding: 20px;
+	text-align: center;
+
+	.input-container{
+		.input-field{
+			padding: 10px;
+		}
+		a{
+		background: $red;
+		color: $white;
+	    padding: 12px 20px;
+	    margin-left: -5px;
+		    p{
+		    	display: none;
+		    }
+		}
+	}
+}
+
+@media(min-width: $tablet-large){
+	.input-container{
+		a{
+			i { display: none; }
+			p { display: inline !important; }
+		}
+	}
+}
