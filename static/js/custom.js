@@ -138,10 +138,10 @@ $(document).ready(function () {
 		})
 		//.setClassToggle(this, 'do-stuff')
 
-		.addIndicators({
-			name: "animate box scene",
-			colorEnd: 'red',
-		})
+		// .addIndicators({
+		// 	name: "animate box scene",
+		// 	colorEnd: 'red',
+		// })
 		.addTo(controller);
 
 	/////info module
@@ -170,10 +170,10 @@ $(document).ready(function () {
 			reverse: false
 		})
 		.setTween(infoTween)
-		.addIndicators({
-			name: "info scene",
-			colorEnd: 'red',
-		})
+		// .addIndicators({
+		// 	name: "info scene",
+		// 	colorEnd: 'red',
+		// })
 		.addTo(controller);
 
 	/////info module
@@ -212,10 +212,10 @@ $(document).ready(function () {
 			reverse: false
 		})
 		.setTween(infoBoxTween)
-		.addIndicators({
-			name: "box scene",
-			colorEnd: 'red',
-		})
+		// .addIndicators({
+		// 	name: "box scene",
+		// 	colorEnd: 'red',
+		// })
 		.addTo(controller);
 
 
@@ -244,9 +244,9 @@ $(document).ready(function () {
 			reverse: false
 		})
 		.setTween(blogTween)
-		.addIndicators({
-			name: "blog scene",
-			colorEnd: 'red',
-		})
+		// .addIndicators({
+		// 	name: "blog scene",
+		// 	colorEnd: 'red',
+		// })
 		.addTo(controller);
 });

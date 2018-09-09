@@ -51,16 +51,29 @@ $(document).ready(function () {
 
   var tlHeader = new TimelineMax();
 
-  tlHeader.set("#gcLabel", {
+  tlHeader.set("#gcLabel1", {
     opacity: 0
   });
-  tlHeader.set("#gcTitle", {
+  tlHeader.set("#gcTitle1", {
     opacity: 0
   });
-  tlHeader.set("#gcText", {
+  tlHeader.set("#gcText1", {
     opacity: 0
   });
-  tlHeader.set("#gcLink", {
+  tlHeader.set("#gcLink1", {
+    opacity: 0
+  });
+
+  tlHeader.set("#gcLabel2", {
+    opacity: 0
+  });
+  tlHeader.set("#gcTitle2", {
+    opacity: 0
+  });
+  tlHeader.set("#gcText2", {
+    opacity: 0
+  });
+  tlHeader.set("#gcLink2", {
     opacity: 0
   });
 
@@ -70,40 +83,82 @@ $(document).ready(function () {
     // Access to event data
 
 
-    tlHeader.set("#gcLabel", {
+    tlHeader.set("#gcLabel1", {
       opacity: 0
     });
-    tlHeader.set("#gcTitle", {
+    tlHeader.set("#gcTitle1", {
       opacity: 0
     });
-    tlHeader.set("#gcText", {
+    tlHeader.set("#gcText1", {
       opacity: 0
     });
-    tlHeader.set("#gcLink", {
+    tlHeader.set("#gcLink1", {
       opacity: 0
     });
-    tlHeader.staggerFromTo("#gcLabel", 0.5, {
+     tlHeader.set("#gcLabel2", {
+      opacity: 0
+    });
+    tlHeader.set("#gcTitle2", {
+      opacity: 0
+    });
+    tlHeader.set("#gcText2", {
+      opacity: 0
+    });
+    tlHeader.set("#gcLink2", {
+      opacity: 0
+    });
+
+    tlHeader.staggerFromTo("#gcLabel1", 0.5, {
       opacity: 0,
       y: '19'
     }, {
       opacity: 1,
       y: '0'
     });
-    tlHeader.staggerFromTo("#gcTitle", 0.5, {
+    tlHeader.staggerFromTo("#gcTitle1", 0.5, {
       opacity: 0,
       y: '19'
     }, {
       opacity: 1,
       y: '0'
     });
-    tlHeader.staggerFromTo("#gcText", 0.5, {
+    tlHeader.staggerFromTo("#gcText1", 0.5, {
       y: '19',
       opacity: 0
     }, {
       y: '0',
       opacity: 1
     });
-    tlHeader.staggerFromTo("#gcLink", 0.5, {
+    tlHeader.staggerFromTo("#gcLink1", 0.5, {
+      y: '19',
+      opacity: 0
+    }, {
+      y: '0',
+      opacity: 1
+    });
+
+    tlHeader.staggerFromTo("#gcLabel2", 0.5, {
+      opacity: 0,
+      y: '19'
+    }, {
+      opacity: 1,
+      y: '0'
+    });
+    tlHeader.staggerFromTo("#gcTitle2", 0.5, {
+      opacity: 0,
+      y: '19'
+    }, {
+      opacity: 1,
+      y: '0'
+    });
+    tlHeader.staggerFromTo("#gcText2", 0.5, {
+      y: '19',
+      opacity: 0
+    }, {
+      y: '0',
+      opacity: 1
+    });
+    tlHeader.staggerFromTo("#gcLink2", 0.5, {
       y: '19',
       opacity: 0
     }, {
