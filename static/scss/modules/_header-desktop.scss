@@ -44,17 +44,20 @@
 		}
 		.main-nav{
 		    position: absolute;
-		    top: 47px;
+		    top: 67px;
 		    left: 83px;
 		    z-index: 1;
 			.logo{
-				width: 15%;
+				width: 20%;
+				@include translate(0, 25px);
 			}
 			.menu-container{
+				@include translate(24%, 0);
 				ul{
 				    display: flex;
 				    justify-content: center;
 				    li{
+				    	 margin-right: 2em;
 				    	a{
 				    		color: $white;
 				    		transition: $transition;

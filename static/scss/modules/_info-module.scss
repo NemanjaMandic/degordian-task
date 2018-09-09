@@ -1,8 +1,24 @@
 .info-module{
+	.header-image{
+		position: relative;
+		#infoOverlay{
+			    background: $red;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    
+		}
+	}
+	.info-content{
+		text-align: center;
+	}
 	.box-container{
 		
-		padding: 20px;
+		padding: 20px 10px;
 		.box{
+			
+			margin: 30px;
 			h3{
 				color: $title-color;
 			}
@@ -23,5 +39,6 @@
 @media (min-width: $tablet-large){
 	.box-container{
 		display: flex;
+		padding: 20px 30px;
 	}
 }

@@ -22,10 +22,29 @@
 }
 
 @media(min-width: $tablet-large){
-	.input-container{
-		a{
-			i { display: none; }
-			p { display: inline !important; }
+	.newsletter-module{
+		padding: 50px 20px;
+
+		p{
+			font-size: 18px;
 		}
+		.input-container{
+		.input-field{
+		    width: 29%;
+		    font-size: 15px;
+		    padding: 11px;
+		    font-family: $helveticaLight;
+		}
+		a{
+			padding: 12px 50px;
+			
+			font-family: $helveticaLight;
+			i { display: none; }
+			p { 
+				display: inline !important;
+				font-size: 14px;
+			}
+		}
+	}
 	}
 }

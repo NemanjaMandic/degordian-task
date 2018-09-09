@@ -4,8 +4,8 @@
 	}
 	.relative-container{
 		position: relative;
-		    height: auto;
-            background: yellow;
+		height: auto;
+           
 		.red-box{
 			background-color: $red;
 		    height: 225px;
@@ -33,7 +33,28 @@
 }
 
 @media (min-width: $tablet-large){
+	.lizing-module{
+		.relative-container{
+		.red-box{
+			background-color: $red;
+		    height: 45vh;
+		   
+		     
+		}
+		.img-container{
+			width: 95%;
+			//position: absolute;
+			@include translateY(-323px);
+			margin-bottom: -323px;
+		}
+	}
+		.content{
+			width: 66%;
+			margin: 0 auto;
+		}
+	}
 	.flex-lg{
 		display: flex;
 	}
+	
 }

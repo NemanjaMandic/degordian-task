@@ -1,9 +1,14 @@
 .contact-module{
-	background: yellow;
+	.title-lg,
+	.text-lg,
+	.link-lg{
+		display: none;
+	}
+	text-align: center;
 	padding: 10px 20px;
 	.contact-link{
 		color: $text-color;
-		border: 1px solid $red;
+		border: 2px solid $red;
 	    margin-bottom: 1em;
 	    display: block;
 		padding: 10px 55px;
@@ -31,7 +36,7 @@
 		}
 	}
 	.input-container{
-	    background: orange;
+	   
 	    height: auto;
 	    padding: 5px 0;
 	    &.close{
@@ -43,3 +48,35 @@
 	    }
 	}
 }
+
+@media(min-width: $tablet-large){
+
+	.contact-module{
+		padding: 50px 20px;
+		.title-sm,
+		.text-sm,
+		.link-sm{
+			display: none;
+		}
+		.title-lg,
+		.text-lg{
+			display: block;
+		    width: 40%;
+		    margin: 18px auto;
+		}
+		.contact-link{
+		    padding: 10px 22px;
+		    width: 12%;
+		    margin: 0 auto;
+			.link-lg{
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+
+
+

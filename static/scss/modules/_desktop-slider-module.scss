@@ -8,7 +8,24 @@
 		.glide-desktop-header{
 			position: relative;
 			.glide__bullets{
-				background: black;
+				    position: absolute;			   
+			        bottom: 23%;
+				    right: 20%;
+				    @include translateX(67%);
+				.glide__bullet {
+				    background-color: #e6e6e6;
+				    width: 10px;
+				    height: 10px; 
+				    box-shadow: none;
+				    &:hover,
+				    &:focus{
+				    	border: 0;
+				    }
+				    &.glide__bullet--active{
+				    	background-color: $red;
+				    }
+				   
+				}
 			}
 			.glide__arrows{
 				.glide__arrow{
@@ -33,9 +50,77 @@
 				}
 			}
 			.glide__slide{
+				position: relative;
 				img{
 					width: 100%;
 				}
+				.content-wrapper{
+					
+				    position: absolute;
+				    top: 50%;
+				    left: 6%;
+				    @include translateY(-54%);
+				    width: 45%;
+				    padding: 20px;
+				    .label{
+					    font-size: 14px;
+					    letter-spacing: 2px;
+					    background: $red;
+					    color: $white;
+					    font-family: $helveticaLight;
+					    padding: 5px 15px;
+					    display: inline-block;
+				    }
+				    .title{
+				    	color: $white;
+				    	font-family: $helveticaRegular;
+				    	font-size: 57px;
+				    	letter-spacing: 2px;
+				    	margin: 25px 0;
+				    }
+				    .text{
+				    	color: $white;
+				    	font-size: 18px;
+				    }
+				    .cta-wrapper{
+				    	a{
+				    		background: $white;
+				    		padding: 16px 39px;
+    						border-radius: 55px
+				    	}
+				    }
+				}
+			}
+		}
+
+		.anchor-wrapper{
+		        background: $white;
+			    width: 50px;
+			    height: 50px;
+			    border-radius: 50%;
+			    position: absolute;
+			    left: 50%;
+			    bottom: 3em;
+			a{
+			    display: inline-block;
+			    @include rotate(90);
+			        //margin-top: 16px;
+    				//margin-left: 15px;
+			        font-size: 11px;
+			        padding: 10px;
+    				border-radius: 50%;
+			        transition: $transition;
+
+    				position: absolute;
+				    top: 18%;
+    				left: 18%;
+				    // @include translate(-50%,-50%);
+			      
+			         padding: 10px;
+			       
+			        &:hover{
+			        	margin-top: 8px;
+			        }
 			}
 		}
 	}

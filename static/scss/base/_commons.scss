@@ -3,6 +3,7 @@ body{
 	color: $text-color;
 	width: 100%;
     display: block;
+    overflow-x: hidden; 
 }
 a{
 	text-decoration: none;
