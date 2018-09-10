@@ -37,8 +37,14 @@
 }
 
 @media (min-width: $tablet-large){
-	.box-container{
-		display: flex;
-		padding: 20px 30px;
+	.info-module{
+		.box-container{
+			display: flex;
+			.box{
+			   
+			    width: 24%;
+			    margin: 0 auto;
+			}
+		}
 	}
 }

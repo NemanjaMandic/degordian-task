@@ -34,27 +34,48 @@
 
 @media (min-width: $tablet-large){
 	.lizing-module{
-		.relative-container{
-		.red-box{
-			background-color: $red;
-		    height: 45vh;
-		   
-		     
+	    
+	    padding: 155px 0;
+		.flex-lg{
+		  display: flex;
+		 
+    	  //padding: 143px 0 23px;
+		  .header{
+
+		  }
+		    .relative-container{
+		    	position: relative;
+				.red-box{
+					background-color: $red;
+				    height: 45vh;
+				    position: absolute;
+    				right: 0;
+    				top: -155px;
+				     
+				}
+				.img-container{
+					width: 95%;
+					position: relative;
+					 @include translateY(-96px);
+					 margin-bottom: -120px;
+					 #lizingOverlay{
+					 	position: absolute;
+					    top: 0;
+					    left: 0;
+					    background: $border-color;
+					    width: 100%;
+					    height: 100%;
+					 }
+				}
+			}
+			
 		}
-		.img-container{
-			width: 95%;
-			//position: absolute;
-			@include translateY(-323px);
-			margin-bottom: -323px;
-		}
-	}
+		
 		.content{
 			width: 66%;
-			margin: 0 auto;
+			margin: 49px auto -80px;
 		}
 	}
-	.flex-lg{
-		display: flex;
-	}
+
 	
 }

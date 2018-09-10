@@ -219,6 +219,44 @@ $(document).ready(function () {
 		.addTo(controller);
 
 
+	/////lizing module
+	var lizingTween = new TimelineMax();
+	lizingTween.fromTo(".red-box", 0.5, {
+			width: '0%'
+		}, {
+			width: '95%',
+			yoyo: true,
+			ease: Circ.easeInOut
+		})
+	.to("#lizingOverlay", 1, {
+		width: "0%"
+	})
+	.from('#lizingTitle', 0.5, {
+			y: 10,
+			opacity: 0,
+			ease: Power4.easeOut
+	})
+	.from('#lizingText', 0.5, {
+			y: 10,
+			opacity: 0,
+			ease: Power4.easeOut
+	})
+
+		
+
+	var infoScene = new ScrollMagic.Scene({
+			triggerElement: '.lizing-module',
+			//duration: '500',
+			reverse: false
+		})
+		.setTween(lizingTween)
+		// .addIndicators({
+		// 	name: "lizing scene",
+		// 	colorEnd: 'red',
+		// })
+		.addTo(controller);
+
+
 	//blog scene
 	var blogTween = new TimelineMax();
 
